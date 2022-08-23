@@ -1,0 +1,13 @@
+body {
+    font-family: var(--main-font), sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    background-color: var(--main-bg-cl);
+    letter-spacing: 0.03em;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+

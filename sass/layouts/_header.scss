@@ -1,0 +1,132 @@
+.header {
+    background-color: var(--main-bg-cl);
+}
+
+.header.border {
+    border-bottom: 1px solid var(--header-cl);
+}
+
+.header-list {
+    display: flex;
+
+    &.list {
+        margin-left: 93px;
+    }
+}
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+
+.header-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-link {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--black-txt-cl);
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color var(--anim-slow);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-txt-cl);
+    }
+}
+
+.header-link.current {
+    color: var(--accent-txt-cl);
+}
+
+
+.header.group.list {
+    display: flex;
+    margin-left: auto;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-txt-cl);
+}
+
+.span-web {
+    color: var(--black-txt-cl);
+}
+
+
+.current {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        height: 4px;
+        display: inline-block;
+
+        background: #2196F3;
+        border-radius: 2px;
+    }
+}
+
+
+.contacts:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+.contact {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--main-txt-cl);
+    text-decoration: none;
+    list-style: none;
+    transition: color var(--anim-slow);
+
+
+    &:hover,
+    &:focus {
+        color: var(--accent-txt-cl);
+    }
+}
+
+
+
+.icon-envelope,
+.icon-smartphone {
+    fill: currentColor;
+    margin-right: 10px;
+
+}

@@ -1,0 +1,37 @@
+.btn {
+    font-style: normal;
+    font-family: inherit;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color var(--anim-slow), background-color var(--anim-slow);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-txt-cl);
+        color: var(--white-txt-cl);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    
+    }
+    &-mode-light {
+        color: var(--black-txt-cl);
+        font-weight: 500;
+        line-height: 1.62;
+        text-align: center;
+        letter-spacing: 0.03em;
+        padding: 6px 22px;
+        background: var(--btn-bg-cl)
+    }
+    
+    &-mode-dark {
+        color: var(--white-txt-cl);
+        text-align: center;
+        padding: 10px 32px;
+        min-width: 200px;
+    }
+}
+
+
+

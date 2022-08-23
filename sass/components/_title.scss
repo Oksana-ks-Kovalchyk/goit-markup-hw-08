@@ -1,0 +1,15 @@
+.title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--black-txt-cl);
+    margin-bottom: 4px;
+
+
+    @include fonts(700, 18px, 2, 00.06em);
+}
+
+
+
+
