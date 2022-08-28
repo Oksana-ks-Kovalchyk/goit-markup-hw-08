@@ -500,6 +500,10 @@ footer {
   background-color: var(--hvr-bg-cl);
 }
 
+.menu {
+  display: none;
+}
+
 .hero-title {
   margin-bottom: 30px;
   width: 696px;
