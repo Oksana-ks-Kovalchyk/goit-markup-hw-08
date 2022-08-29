@@ -17,6 +17,10 @@
     &.list {
         margin-left: 93px;
     }
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
 
 
@@ -29,6 +33,10 @@
 .header-nav {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 767px) {
+            width: 100%;
+        }
 }
 
 
@@ -73,6 +81,11 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--accent-txt-cl);
+
+    @media screen and (min-width: 768px) {
+            padding: 0;
+            ;
+        }
 }
 
 .span-web {

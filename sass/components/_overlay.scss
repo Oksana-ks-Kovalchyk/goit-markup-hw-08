@@ -1,11 +1,8 @@
 .overlay {
     position: relative;
     overflow: hidden;
-    width: 100%;
-    height: 100%;
-}
 
-.overlay__text {
+    &__text {
     color: #FFFFFF;
     font-family: 'Roboto';
     font-style: normal;
@@ -13,7 +10,7 @@
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
-    padding: 63px 24px;
+    padding: 77px 24px;
     position: absolute;
     top: 0;
     left: 0;
@@ -26,10 +23,24 @@
 
     transition: var(--anim-slow);
 
+    @media screen and (min-width: 768px) {
+        padding: 49px 24px 77px 24px;
+        }
 
-    .card__box:hover &,
-    .card__box:focus & {
-        transform: translateY(0);
+    @media screen and (min-width: 1200px) {
+        padding: 63px 24px;
+        }
+
     }
+
+    .card__box:hover &__text,
+    .card__box:focus &__text {
+    transform: translateY(0);
+    }
+
 }
+
+
+
+
 
