@@ -1,27 +1,56 @@
-.card-set {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
+.card {
+    // display: flex;
+    // flex-wrap: wrap;
+    // gap: 30px;
+    // padding: 0;
+    // margin: 0;
+    // list-style: none;
 
+    margin-left: -30px;
+    
+        @media screen and (min-width: 768px) {
+            margin-top: -30px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+            &__list {
+            margin-top: 30px;
+            margin-left: 30px;
+            background-color: var(--main-bg-cl);
 
-    &.page {
-    flex-basis: calc((100% - 60px) / 3);
-    background-color: var(--main-bg-cl);
+            @media screen and (min-width: 768px) {
+                flex-basis: calc((100% - 2 * 30px) / 2);
+            }
+    
+            @media screen and (min-width: 1140px) {
+                flex-basis: calc((100% - 3 * 30px) / 3);
+            }
+        }
+    
+}
+
+.card__list:not(:last-child) {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
     }
 }
 
-.prtf {
-    display: block;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 36px;
+
+.card__box {
     text-decoration: none;
     color: var(--black-txt-cl);
-
     transition: color var(--anim-slow), box-shadow var(--anim-slow);
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
 
 
     &:hover,
